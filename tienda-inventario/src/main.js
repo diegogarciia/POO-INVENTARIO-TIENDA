@@ -24,3 +24,8 @@ inventario.eliminarProducto("Pantalón")
 inventario.mostrarProductos()
 
 inventario.calcularValorTotal()
+
+localStorage.setItem("inventarioguardado", JSON.stringify(inventario.productos));
+var inventarioguardado = JSON.parse(localStorage.getItem("inventarioguardado"));
+console.log(inventarioguardado);
+//localStorage.removeItem("inventarioguardado");
